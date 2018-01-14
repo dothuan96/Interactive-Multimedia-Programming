@@ -1,0 +1,17 @@
+1. HTML: also known as HyperText Markup Language.  is the language used to create the websites you visit everyday.
+It provides a logical way to structure content for websites.
+
+2. CSS: also known as Cascading Style Sheets, is a language that web developers use to style the HTML content on a web page.
+If you're interested in modifying colors, font types, font sizes, shadows, images, element positioning, and more.
+
+3. Javascript: JavaScript is a widely used web-based programming language that powers the dynamic behavior on most websites, including this one.
+It's used to build back-end of a website.
+
+4. HTTP: also known as HyperText Transfer Protocol. It is a protocol which allows the fetching of resources, such as HTML documents. It is the foundation of any data exchange on the Web
+and a client-server protocol, which means requests are initiated by the recipient, usually the Web browser.
+
+5. HTML5: is the latest evolution of the standard that defines HTML with new elements, attributes, and behaviors, and a larger set of technologies.
+The term represents two different concepts.
+
+6. DHTML (Dynamic HTML): is a set of innovative features originally which enables authors to create visually compelling Web sites without the overhead of server-side
+programs or complicated sets of controls to achieve special effects.
