@@ -1,0 +1,20 @@
+- Rather than tailoring disconnected designs to each of an ever-increasing number of web devices, we can
+treat them as facets of the same experience. We can design for an optimal viewing experience, but embed
+standards-based technologies into our designs to make them not only more flexible, but more adaptive to
+the media that renders them. In short, we need to practice Responsive Web Design (RWD).
+- No design, fixed or fluid, scales seamlessly beyond the context for which it was originally intended.
+The example design scales perfectly well as the browser window resizes, but stress points quickly appear
+at lower resolutions. When viewed at viewport smaller than 800×600, the illustration behind the logo quickly
+becomes cropped, navigation text can wrap in an unseemly manner, and the images along the bottom become too
+compact to appear legible. And it’s not just the lower end of the resolution spectrum that’s affected: when
+viewing the design on a widescreen display, the images quickly grow to unwieldy sizes, crowding out the
+surrounding context.
+
+- The CSS specification supplied us with a bevy of acceptable media types, each designed to target a specific
+class of web-ready device. The CSS3 specification, improving upon the promise of media types. A media query allows
+us to target not only certain device classes, but to actually inspect the physical characteristics of the device
+rendering our work.
+
+-Both em and rem are flexible, scalable units which are translated by the browser into pixel values, depending on
+the font size settings in your design. If you use a value of 1em or 1rem, it could translate in the browser as anything
+from 16px to 160px or any other value.

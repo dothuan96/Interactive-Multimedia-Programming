@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+h2 {
+  padding: 0.5em;
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  background-color: #4CAF50;
+}
+
+ul {
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-color: #f1f1f1;
+  height: 100%; /* Full height */
+}
+
+li a {
+    display: block;
+    padding: 1em 1em;
+    font-size: 1em;
+    color: #000;
+    text-decoration: none;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+li a:hover:not(.active) {
+  color: white;
+  background-color: #555;
+}
+
+.content {
+  margin-left: 15%;
+  padding: 0.5em 1em;
+}
+
+.hero-info {
+  display: flow-root;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+}
+
+.hero-info h4 {
+  padding: 0.5em 0;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.hero-info a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+.hero-info p {
+  margin: 0.5em 0;
+}
+
+.hero-info .img-bor {
+  position: relative;
+  float: right;
+  width: 25%;
+  overflow: hidden;
+}
+
+.hero-info .img-bor img {
+  margin-left: 1em;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  ul {
+    position: relative;; /* Make it stick, even on scroll */
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .content {
+    margin: 0;
+    padding: 0.5em 1em;
+  }
+
+  .hero-info h4 {
+    font-size: 2em;
+  }
+
+  .hero-info .img-bor {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 50%;
+  }
+}
