@@ -1,0 +1,49 @@
+body {
+  background: #3B3C3D;
+  color: #fff;
+}
+
+.input {
+  position: sticky;
+  border: 1px solid lightgray;
+  bottom: 0;
+  width: 100%;
+  background: white;
+}
+
+#message {
+  position: relative;
+  height: 2em;
+  width: calc(100% - 4em);
+  border: none;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+
+#send-btn {
+  position: relative;
+  width: 4em;
+  background: transparent;
+  border: 0;
+  float: right;
+  line-height: 2.4em;
+  outline: 0;
+  padding: 0.1em 0.5em;
+}
+
+.fa {
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  font-size: 1.2em;
+  cursor: pointer;
+  vertical-align: middle;
+  color: #4285f4;
+}
+
+#chatbox {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid lightgray;
+}
