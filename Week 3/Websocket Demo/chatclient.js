@@ -15,8 +15,8 @@ function setUsername() {
 }
 
 function connect() {
-  var serverUrl = "ws://" + window.location.hostname + ":6502";
-  //var serverUrl = "ws://obscure-waters-98157.herokuapp.com";
+  //var serverUrl = "ws://" + window.location.hostname + ":6502";
+  var serverUrl = "ws://localhost" + ":6502";
 
   connection = new WebSocket(serverUrl);
 
