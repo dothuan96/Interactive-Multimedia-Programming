@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas Game</title>
+    <style media="screen">
+      canvas{
+        border: 1px solid black;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body onload="run()">
+    <h3>Score: <span id="score"></span></h3>
+    <p>Each time you click on ball, you will get 1 point. Try it!</p>
+    <canvas id="myCanvas" width="720" height="480"></canvas>
+
+    <script type="text/javascript">
+      //define canvas
+      var canvas = document.getElementById('myCanvas');
+      var ctx = canvas.getContext('2d');
+      var width = canvas.width;
+      var height = canvas.height;
+      var sumScore = 0;
+      var stopTime;
+
+      var ball = {
+        x: 0,
+        y: 0,
+        r: 0,
+        color: '',
+        init: function()   //declare the all value for 1 ball
+        {
+          this.x = Math.random() * width;
+          this.y = Math.random() * height;
+          this.r = Math.random() * (60-15) + 15;  //random a range from min:15 to max 60
+          this.sx = Math.random() * (4-1) + 1;   //random from 1 to 4
+          this.sy = Math.random() * (4-1) + 1;
+
+          this.color = 'rgb(' + Math.floor(Math.random() * 256) + ','
+          + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
+        },
+        draw: function()   //draw ball with the value above
+        {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.r , 0, Math.PI*2);
+          ctx.closePath();
+
+          ctx.strokeStyle= this.color;
+          ctx.stroke();
+          ctx.fillStyle= this.color;
+          ctx.fill();
+        },
+        clear: function()
+        {
+          ctx.clearRect(0, 0, width, height);
+        }
+      }
+
+      function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+          x: evt.clientX - rect.left,
+          y: evt.clientY - rect.top
+        };
+      }
+
+      function checkMousePos(mouseX, mouseY) {
+        var message = 'Mouse position: ' + mouseX + ',' + mouseY;
+        var ballX = ball.x - ball.r;
+        var ballY = ball.y - ball.r;
+
+        if(mouseX < ballX && mouseY < ballY) {
+          sumScore += 0;
+        }
+        else {
+          clearTimeout(stopTime);    //reset timeout
+          replace();
+          sumScore++;
+        }
+      }
+
+      function replace() {
+        ball.clear();
+        ball.init();
+        ball.draw();
+        stopTime = setTimeout(replace, 500);
+      }
+
+      function stop() {
+        ball.clear();
+        clearTimeout(stopTime);
+        document.getElementById('score').innerHTML = sumScore;
+      }
+
+      function run() {
+        ball.init();
+        ball.draw();
+
+        canvas.addEventListener('click', function(evt) {
+          var mousePos = getMousePos(canvas, evt);
+          checkMousePos(mousePos.x, mousePos.y);
+        }, false);
+
+        setTimeout(stop, 10000);
+      }
+    </script>
+  </body>
+</html>
