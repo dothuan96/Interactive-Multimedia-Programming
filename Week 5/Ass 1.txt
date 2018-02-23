@@ -1,0 +1,11 @@
+1-2. jQuery's syntax is designed to make it easier to navigate a document, select DOM elements,
+create animations, handle events, and develop Ajax applications. jQuery also provides capabilities
+for developers to create plug-ins on top of the JavaScript library. This enables developers to create
+abstractions for low-level interaction and animation, advanced effects and high-level, themeable widgets.
+The modular approach to the jQuery library allows the creation of powerful dynamic web pages and Web applications.
+
+3. For the earlier list person application, we can make some animation when the page load such as Fade in, Fade out, etc.
+Also, we can handle the onclick event on js file and make list person display when browser finishes loading document.
+
+4. If you don't want to download and host jQuery yourself, you can include it from a CDN:
+<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
