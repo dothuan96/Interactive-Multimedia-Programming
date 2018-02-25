@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------
+  	[Footer]
+------------------------------------------------------------------*/
+.footer {
+  border-top: 1px solid #f7fafc;  
+}
+
+.credit {
+  position: relative;
+  float: right;
+}
+
+span {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+span.bold {
+  font-weight: 700;
+  color: #81848f;
+}
+
+.cre-logo {
+  display: inline;
+}
+
+.footer-logo {
+  width: 64px;
+  height: auto;
+}
+
+.content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

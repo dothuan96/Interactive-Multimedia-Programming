@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Learning Diary</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Global mandatory file-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+
+    <!--External CSS-->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/work.css">
+  </head>
+  <body id="body">
+    <div class="title">
+      <h1 class="container">
+        <span style="color: #515769">Learning</span>
+        <span style="color: #FCCF26">Diary</span>
+      </h1>
+    </div>
+
+    <!--========== CONTENT ==========-->
+    <div class="course-section container-fluid">
+      <section class="container describe">
+        <div class="row">
+          <div class="col-sm-3" style="padding-right: 0;">
+            <ul class="list-group tabs">
+              <li class="list-group-item li-panel active" onclick="panelcur(0)">
+                <a>Interactive Multimedia</a>
+              </li>
+              <li class="list-group-item li-panel" onclick="panelcur(1)">
+                <a>Bussiness Implementation</a>
+              </li>
+              <li class="list-group-item li-panel" onclick="panelcur(2)">
+                <a>More info</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-9" style="padding-left: 0;">
+            <div class="panels">
+              <!--First course-->
+              <div class="panel-content active">
+                <!--All content in one week-->
+                <div class="week">
+                  <!--List assignment for each week-->
+                  <div class="topic active" onclick="topic(0)">Week 1 - Basic of Web technologies</div>
+                  <div class="assignments">
+                    <div class="row ass">
+                      <div class="col-sm-10">Documentation</div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%201/1_Lab.pdf">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 1</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%201/Week%201-%20ass%201.txt">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%201/Week%201-%20ass%201.txt">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 3</div>
+                      <div class="col-sm-2"><a class="link" href="#">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%201/Week%201-%20ass%203.html">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 5</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%201/Week%201-%20ass%205.html">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%201/Week%201-%20ass%205.html">Git</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!--Next week-->
+                <div class="week">
+                  <!--List assignment for each week-->
+                  <div class="topic" onclick="topic(1)">Week 2 - Responsive Web Design and stuff</div>
+                  <div class="assignments">
+                    <div class="row ass">
+                      <div class="col-sm-10">Documentation</div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%202/2_Lab.pdf">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 1</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%202/Ass%201.txt">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%202/Ass%201.txt">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 2</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%202/Ass%202.html">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%202/Ass%202.html">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 3-4</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%202/Ass%203-4.html">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%202/Ass%203-4.html">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 5</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%202/Ass%205.html">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%202/Ass%205.html">Git</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!--Next week-->
+                <div class="week">
+                  <!--List assignment for each week-->
+                  <div class="topic" onclick="topic(2)">Week 3 - Elegant Javascript API</div>
+                  <div class="assignments">
+                    <div class="row ass">
+                      <div class="col-sm-10">Documentation</div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%203/3_Lab.pdf">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 1</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%203/Ass%201/">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/tree/master/Week%203/Ass%201">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 2</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%203/Ass%202/ListPer.html">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/tree/master/Week%203/Ass%202">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 3</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%203/Ass%203.html">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%203/Ass%203.html">Git</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!--Next week-->
+                <div class="week">
+                  <!--List assignment for each week-->
+                  <div class="topic" onclick="topic(3)">Week 4 - Canvas HTML5</div>
+                  <div class="assignments">
+                    <div class="row ass">
+                      <div class="col-sm-10">Documentation</div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%204/4_Lab.pdf">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 1</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%204/Ass%201.html">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%204/Ass%201.html">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 2</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%204/Ass%202.html">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%204/Ass%202.html">Git</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!--Next week-->
+                <div class="week">
+                  <!--List assignment for each week-->
+                  <div class="topic" onclick="topic(4)">Week 5 - Jquery and AJAX</div>
+                  <div class="assignments">
+                    <div class="row ass">
+                      <div class="col-sm-10">Documentation</div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%205/5_Lab.pdf">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 1</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%205/Ass%201.txt">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%205/Ass%201.txt">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 2</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%205/Ass%202.html">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%205/Ass%202.html">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 3</div>
+                      <div class="col-sm-2"><a class="link" href="#">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="">Git</a></div>
+                    </div>
+                  </div>
+                </div>
+                <!--Next week-->
+                <div class="week">
+                  <!--List assignment for each week-->
+                  <div class="topic" onclick="topic(5)">Week 6 - Get JSON with Jquery API</div>
+                  <div class="assignments">
+                    <div class="row ass">
+                      <div class="col-sm-10">Documentation</div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%206/6_Lab.pdf">Git</a></div>
+                    </div>
+                    <div class="row ass">
+                      <div class="col-sm-8">Assignment 1</div>
+                      <div class="col-sm-2"><a class="link" href="http://www.students.oamk.fi/~t6dova00/Interactive%20Multimedia/Week%206/flick.html">Demo</a></div>
+                      <div class="col-sm-2"><a class="link" href="https://github.com/dothuan96/Interactive-Multimedia-Programming/blob/master/Week%206/flick.html">Git</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Next course-->
+              <div class="panel-content">
+                <!--BUSSINESS IMPLEMENTATION-->
+              </div>
+              <div class="panel-content">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--========== CONTENT ==========-->
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer">
+      <div class="content container">
+        <div class="cre-logo">
+            <img class="footer-logo" src="img/logo2.png" alt="Docv Logo">
+        </div>
+        <div class="credit">
+          <span class="bold">Docv </span>
+          <span>Theme Powered By: </span>
+          <span class="bold">Do Van Thuan</span>
+        </div>
+      </div>
+    </footer>
+    <!--========== END FOOTER ==========-->
+
+    <!--GLOBAL MANDATORY JS CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--JAVASCRIPTS-->
+    <script src="js/work.js" charset="utf-8"></script>
+  </body>
+</html>

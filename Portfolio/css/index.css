@@ -1,0 +1,114 @@
+/*------------------------------------------------------------------
+  	[Social Icons]
+------------------------------------------------------------------*/
+.social-icons {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
+  padding: 11px;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.icons {
+  display: inline-block;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.social-icons:hover {
+  color: #515769;
+  background: #fff;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+/*------------------------------------------------------------------
+  	[Promo Block]
+------------------------------------------------------------------*/
+.promo-block {
+  padding: 220px 0 130px;
+}
+
+.promo-block .promo-block-title {
+  font-size: 70px;
+  color: #fff;
+  line-height: 1;
+}
+
+.promo-block .promo-block-text {
+  font-size: 25px;
+  color: #fff;
+}
+
+.promo-block .promo-block-divider {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 20px;
+  margin-bottom: 35px;
+}
+
+/*------------------------------------------------------------------
+  	[Parallax Window]
+------------------------------------------------------------------*/
+.parallax {
+    /* The image used */
+    background-image: url('https://i.imgur.com/IhwIeNf.jpg');
+    height: auto;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+/*------------------------------------------------------------------
+    [Progress Bar]
+------------------------------------------------------------------*/
+.progress-box .progress {
+  box-shadow: none;
+  margin-bottom: 20px;
+  height: 3px;
+}
+
+.progress-box .progress-bar {
+  transition-duration: 2000ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.content-lg {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.margin-b-60 {
+  margin-bottom: 60px !important;
+}
+
+.progress-box h5 {
+  font-size: 14px;
+}
+
+.bg-color-base {
+  background: #FCCF26 !important;
+}
+
+.pull-right {
+  float: right!important;
+}
