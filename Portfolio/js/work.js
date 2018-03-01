@@ -19,7 +19,6 @@ function panelcur(m) {
   //add class active to the list_panel which clicked (n)
   list_panel[n].classList.add('active'); console.log(n);
   panel_contents[n].classList.add('active');
-  panel.style.height = panel_contents[n].offsetHeight + 'px';
 }
 
 /*=======================================TOPIC ACTIVE=============================*/
